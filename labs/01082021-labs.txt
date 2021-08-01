@@ -1,0 +1,1 @@
+Prctise different INSERT/ UPDATE statements
