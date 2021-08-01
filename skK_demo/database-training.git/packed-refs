@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+76a6916e0272886c286c11bbbd355e425fe16e51 refs/heads/lt-demo-using-git
+60252b563c4d2557c3f2a5ac8a776305b5434afa refs/heads/main
+196979d4857db39c4c493aae641e98fce77d1f03 refs/heads/sb-demo-using-git
+f032e77c8c03f9e9d78da89852abdcbb40c54b0c refs/heads/sk-demo-using-git
+599638d68243f90bd6ec23c1725eb9ce01c47ec9 refs/heads/vb-demo-using-git
