@@ -1,3 +1,5 @@
+--Need to Check
+
 CREATE SCHEMA demo
 
 CREATE TABLE demo.DAILY_PRICING (ProductGroupName varchar(100),ProductName varchar(100),StateName varchar(100),Market_Center varchar(100),Arrivals_in_tonnes Decimal(16,2),Unit_of_Arrivals char(6),Origin varchar(100),Variety varchar(100),Minimum_Prices_in_Rs_quintals Decimal(16,2),Maximum_Prices_in_Rs_quintals Decimal(16,2),Modal_Prices_in_Rs_quintals Decimal(16,2),Unit_of_Price char(10))
