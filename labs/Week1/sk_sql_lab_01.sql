@@ -1,5 +1,5 @@
 --CRETING DATABASE
-CREATE DATABASE analysis
+CREATE DATABASE agro_analysis
 --CREATING SCHEMA
 CREATE SCHEMA source_data
 --CREATING TABLE
@@ -20,20 +20,20 @@ Unit_of_Price char(10),
 --ALTERING TABLE
 ALTER TABLE source_data.DAILY_PRICING ADD Arrival_date Date
 --INSERTING VALUES
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','gujarat','padra',3,'tonnes','NR','leafy vegetables',1000,1250,1100,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','haryana','Barwala(Hisar)',5,'tonnes','NR','others',400,500,500,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','haryana','Ladwa',0.2,'tonnes','NR','leafy vegetables',800,1000,800,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','haryana','Samalkha',0.06,'tonnes','NR','leafy vegetables',1900,2000,1950,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','haryana','Shahzadpur',0.1,'tonnes','NR','leafy vegetables',600,600,600,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','Maharashtra','Pune(Hadapsar)',56,'tonnes','NR','others',1800,1800,1800,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','Odisha','Betnoti',0.01,'tonnes','NR','leafy vegetables',800,1000,900,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','Odisha','Dhenkanal',0.05,'tonnes','NR','others',1000,1200,1000,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','Odisha','Khariar Road',0.5,'tonnes','NR','others',2000,2200,2000,'Rs/Quintal','01/01/2019')
-INSERT INTO	source_data.DAILY_PRICING VALUES('vegetables','leafy vagetables','Odisha','Mottagaon',0.04,'tonnes','NR','others',1000,1200,1000,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Oil and Fats','Coconut Oil','Kerala','Kanjangadu',1,'tonnes','NR','Others',18000,18400,18200,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Oil and Fats','Coconut Oil','Kerala','Kannur',30,'tonnes','NR','Others',18200,18300,18250,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Oil and Fats','Coconut Oil','Kerala','Kuthuparambu',2.8,'tonnes','NR','Others',18800,19500,19000,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Oil and Fats','Coconut Oil','Kerala','Moovattupuzha',2,'tonnes','NR','leafy vegetables',16020,16850,16500,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Oil and Fats','Ghee','Uttar Pradesh','Aligarh',60,'tonnes','NR','Ghee',38650,38750,38700,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Others','Dhaincha','Rajasthan','Alwar',0.4,'tonnes','NR','others',3500,3600,3550,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Others','Dhaincha','Rajasthan','Bharatpur',3.9,'tonnes','NR','others',3500,3560,3530,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Others','Dhaincha','Rajasthan','Hindoun',0.7,'tonnes','NR','others',3521,3521,3521,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Others','Dhaincha','Rajasthan','Kherli',9.8,'tonnes','NR','others',3500,3740,3660,'Rs/Quintal','01/01/2019')
+INSERT INTO	source_data.DAILY_PRICING VALUES('Others','Dhaincha','Rajasthan','Mahua Mandabar(Mahua)',3.1,'tonnes','NR','others',3530,3596,3563,'Rs/Quintal','01/01/2019')
 --UPDATING DATA
-UPDATE source_data.DAILY_PRICING SET variety='others' WHERE market_center='Betnoti'
+UPDATE source_data.DAILY_PRICING SET variety='others' WHERE market_center='Hindoun'
 --DELETING A SELECTED ROW
-DELETE FROM source_data.DAILY_PRICING WHERE Market_center='Mottagaon'
+DELETE FROM source_data.DAILY_PRICING WHERE Market_center='hindoun'
 --RETRIEVING ALL DATA 
 SELECT* FROM source_data.DAILY_PRICING
 --RETRIEVING PARTICULAR COLUMN
