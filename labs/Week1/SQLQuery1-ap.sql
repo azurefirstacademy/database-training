@@ -16,7 +16,7 @@ Unit_of_Prices char(10)
 )
 alter Table source_data.DAILY_PRICING add price_date date
 
-select * from source_data.DAILY_PRICING
+go
 INSERT INTO source_data.DAILY_PRICING values (
 'Cereals',
 'Amphophalus',
@@ -32,7 +32,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 'Rs/Quintal',
 '01/01/2019'
 )
-select * from source_data.DAILY_PRICING
+go
 Insert into source_data.DAILY_PRICING values (
 'Cereals',
 'Amphophalus',
@@ -48,11 +48,11 @@ Insert into source_data.DAILY_PRICING values (
 'Rs/Quintal',
 '01/01/2019'
 )
-select * from source_data.DAILY_PRICING
+go
 Insert into source_data.DAILY_PRICING
 (
 ProductGroupName,
-ProductName,
+ProuductName,
 statename,
 Market_Center,
 price_date
@@ -64,7 +64,7 @@ values (
 'Aroor',
 '01/01/2019'
 )
-Select * from source_data.DAILY_PRICING
+go
 
 Update source_data.DAILY_PRICING
 Set
@@ -79,17 +79,7 @@ Unit_of_Prices='Rs/Quintal'
 where
 Market_Center='Aroor'
 
-select * from source_data.DAILY_PRICING
-
-select ProductGroupName,ProuductName From source_data.DAILY_PRICING 
-
-select variety,Origin from source_data.DAILY_PRICING
-where Market_Center='Alappuzha'
-
-select UPPER (maximum_Prices_in_Rs_Quintals) from source_data.DAILY_PRICING
-
-Select UPPER (maximum_Prices_in_Rs_Quintals) as Maximum_Prices_in_Rs_Quintals from source_data.DAILY_PRICING
-
+go
 insert into source_data.DAILY_PRICING values (
 'Cereals',
 'Amphophalus',
@@ -105,7 +95,7 @@ insert into source_data.DAILY_PRICING values (
 'Rs/Quintal',
 '01/01/2019'
 )
-select * from source_data.DAILY_PRICING
+go
 
 Insert into source_data.DAILY_PRICING values (
 'Cereals',
@@ -122,7 +112,7 @@ Insert into source_data.DAILY_PRICING values (
 'Rs/Quintal',
 '01/01/2019'
 )
-select * from source_data.DAILY_PRICING
+go
 
 Insert into source_data.DAILY_PRICING
 (
@@ -139,7 +129,7 @@ Values (
 'Harippad',
 '01/01/2019'
 )
-select * from source_data.DAILY_PRICING
+go
 
 update source_data.DAILY_PRICING
 set
@@ -153,7 +143,7 @@ Modal_Prices_in_Rs_Quintals=4000,
 Unit_of_Prices='Rs/Quintal'
 where
 Market_Center='Harippad'
-select * from source_data.DAILY_PRICING
+go
 
 Insert into source_data.DAILY_PRICING values (
 'Cereals',
@@ -170,7 +160,7 @@ Insert into source_data.DAILY_PRICING values (
 'Rs/Quintal',
 '01/01/2019'
 )
-select * from source_data.DAILY_PRICING
+go
 
 Insert into source_data.DAILY_PRICING values(
 'Cereals',
@@ -187,7 +177,7 @@ Insert into source_data.DAILY_PRICING values(
 'Rs/Quintal',
 '01/01/2019'
 )
-select * from source_data.DAILY_PRICING
+go
 
 Insert into source_data.DAILY_PRICING 
 (
@@ -205,7 +195,7 @@ Values
 'Kayamkulam',
 '01/01/2019'
 )
-select *from source_data.DAILY_PRICING
+go
 Update source_data.DAILY_PRICING
 set
 Arrivals_in_Tonnes=2,
@@ -218,7 +208,7 @@ Modal_Prices_in_Rs_Quintals=2200,
 Unit_of_Prices='Rs/Quintal'
 where
 Market_Center='Kayamkulam'
-select * from source_data.DAILY_PRICING
+go
 
 Insert into source_data.DAILY_PRICING values (
 'Cereals',
@@ -235,8 +225,5 @@ Insert into source_data.DAILY_PRICING values (
 'Rs/Quintal',
 '01/01/2019'
 )
-select productgroupname , count (*)
-from source_data.DAILY_PRICING
-group by ProductGroupName
 
 select * from source_data.DAILY_PRICING
