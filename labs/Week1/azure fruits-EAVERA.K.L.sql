@@ -16,6 +16,8 @@ Unit_of_Price char(10)
 )
 
 Alter Table source_data.DAILY_PRICING add price_date date
+ 
+ 
 
 INSERT INTO source_data.DAILY_PRICING values (
 'Fruits',
@@ -33,36 +35,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 '01/01/2019'
 )
 
-select * from source_data.DAILY_PRICING
-
-INSERT INTO source_data.DAILY_PRICING values (
-'vegetables',
-'Amla(Nelli Kai)',
-'Gujarat',
-'Ahmedabad',
-32.3,
-'Tonnes',
-'NR',
-'Other',
-1000,
-2500,
-1800,
-'Rs/Quintal',
-'01/01/2019'
-)
-
-select * from source_data.DAILY_PRICING
-
-DELETE
-from
-source_data.DAILY_PRICING
-where
-ProductGroupName='vegetables'
-
-select * from source_data.DAILY_PRICING
-
-
-
+go
 
 INSERT INTO source_data.DAILY_PRICING values (
 'Fruits',
@@ -80,9 +53,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 '01/01/2019'
 )
 
-select * from source_data.DAILY_PRICING
-
-
+go
 
 INSERT INTO source_data.DAILY_PRICING values (
 'Fruits',
@@ -100,7 +71,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 '01/01/2019'
 )
 
-select * from source_data.DAILY_PRICING
+go
 
 
 
@@ -120,8 +91,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 '01/01/2019'
 )
 
-select * from source_data.DAILY_PRICING
-
+go
 
 INSERT INTO source_data.DAILY_PRICING values (
 'Fruits',
@@ -139,7 +109,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 '01/01/2019'
 )
 
-select * from source_data.DAILY_PRICING
+go
 
 
 INSERT INTO source_data.DAILY_PRICING values (
@@ -157,9 +127,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 'Rs/Quintal',
 '01/01/2019'
 )
-
-select * from source_data.DAILY_PRICING
-
+go
 
 INSERT INTO source_data.DAILY_PRICING values (
 'Fruits',
@@ -177,7 +145,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 '01/01/2019'
 )
 
-select * from source_data.DAILY_PRICING
+go
 
 
 INSERT INTO source_data.DAILY_PRICING values (
@@ -196,7 +164,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 '01/01/2019'
 )
 
-select * from source_data.DAILY_PRICING
+go
 
 
 INSERT INTO source_data.DAILY_PRICING values (
@@ -215,7 +183,7 @@ INSERT INTO source_data.DAILY_PRICING values (
 '01/01/2019'
 )
 
-select * from source_data.DAILY_PRICING
+go
 
 
 
@@ -247,7 +215,7 @@ values(
 'Rs/Quintal',
 '01/01/2019'
 )
-select * from source_data.DAILY_PRICING
+go
 
 
 UPDATE source_data.DAILY_PRICING
