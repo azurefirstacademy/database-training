@@ -15,3 +15,8 @@
   Git push
   
   git push --set-upstream origin rr-demo-using-git
+  
+  
+  PULL LATEST CHANGES FROM MAIN BRANCH
+  
+  git pull origin main
