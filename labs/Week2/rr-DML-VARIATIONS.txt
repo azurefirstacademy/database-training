@@ -1,0 +1,62 @@
+INSERT INTO 
+source_data.product_price 
+VALUES (
+'Vegetables',
+'Leafy Vegetable',
+'Gujarat',
+'Padra',
+3,
+'Tonnes',
+'NR',
+'Leafy Vegetables',
+1000,
+1250,
+1100,
+'Rs/Quintal',
+'01/01/2019'
+)
+
+INSERT INTO 
+source_data.product_price (
+ProductGroupName,
+ProductName,
+StateName,
+Market_Center,
+Unit_of_Arrivals)
+VALUES (
+'Vegetables',
+'Leafy Vegetable',
+'Kerala',
+'Palakkad',
+'Tonnes'
+)
+
+UPDATE
+source_data.product_price
+SET
+Arrivals_in_tonnes=1
+WHERE
+Market_Center='Palakkad'
+
+UPDATE
+source_data.product_price
+SET
+Origin='NR',
+Variety='Other',
+Minimum_Price=3600,
+Maximum_Price=4500,
+Modal_Price=4100,
+Unit_of_Price='Rs/Quintal'
+WHERE
+Market_Center='Palakkad'
+
+DELETE FROM
+source_data.
+product_price
+
+DELETE FROM
+source_data.
+product_price
+WHERE
+Market_Center=
+'Palakkad'

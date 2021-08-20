@@ -1,0 +1,88 @@
+CREATE SCHEMA source_data
+
+CREATE TABLE 
+source_data.product_price (
+ProductGroupName varchar(100),
+ProductName varchar(100),
+StateName varchar(100),
+Market_Center varchar(100),
+Arrivals_in_tonnes Decimal(16,2),
+Unit_of_Arrivals char(6),
+Origin varchar(100),
+Variety varchar(100),
+Minimum_Price Decimal(16,2),
+Maximum_Price Decimal(16,2),
+Modal_Price Decimal(16,2),
+Unit_of_Price char(10)
+)
+
+CREATE INDEX 
+idx_ProductName
+ON 
+source_data.product_price(ProductName);
+
+CREATE VIEW
+source_data.
+product_price_view
+AS
+SELECT * FROM
+source_data.product_price
+
+
+ALTER SCHEMA
+storage_data 
+TRANSFER
+other_schema.tablename
+
+ALTER TABLE
+source_data.product_price
+ADD price_date date
+
+ALTER TABLE 
+source_data.product_price
+ALTER COLUMN
+Market_Center varchar(100) NOT NULL;
+
+ALTER INDEX 
+idx_ProductName ON 
+source_data.product_price
+DISABLE;  
+
+ALTER INDEX 
+idx_ProductName ON 
+source_data.product_price
+REBUILD; 
+
+ALTER VIEW
+source_data.
+product_price_view
+AS
+SELECT * FROM
+source_data.product_price
+WHERE
+StateName='Tamilnadu'
+
+DROP INDEX
+idx_ProductName 
+ON
+source_data.product_price
+
+DROP VIEW
+source_data.
+product_price_view
+
+DROP TABLE 
+source_data.product_price
+
+DROP SCHEMA source_data 
+
+
+ 
+
+
+
+
+
+
+
+
