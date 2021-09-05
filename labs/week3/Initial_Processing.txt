@@ -1,0 +1,13 @@
+select * from
+(
+select 1 as join_key,[Column_0],[Column_1],[Column_2],[Column_3],[Column_4],[Column_5],[Column_6]
+      ,[Column_7],[Column_8],[Column_9] from
+[source_data].[DAILY_PRICING_RAW_DATA]
+) src_raw_data
+left outer join 
+(select 1 as join_key,
+substring(column_1 ,CHARINDEX(':', column_1)+1,11) as Price_date
+from [source_data].[DAILY_PRICING_RAW_DATA]
+where
+column_0 = '"Commodity-wise') src_price_date
+on src_raw_data.join_key=src_price_date.join_key
